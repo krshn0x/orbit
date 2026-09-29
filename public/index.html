@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101813"><title>Orbit — Solana wallet infrastructure</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-mark">◈</span> orbit<span class="brand-dot">.</span></a>
+    <div class="workspace"><div class="workspace-avatar">S</div><div>Solana workspace<small>Local development</small></div><span>⌄</span></div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav aria-label="Main navigation">
+      <button data-view="overview" class="active"><span>▦</span> Overview</button>
+      <button data-view="wallets"><span>▣</span> Wallets</button>
+      <button data-view="payments"><span>⇄</span> Payments</button>
+      <button data-view="approvals"><span>◎</span> Approvals <b id="approval-count">0</b></button>
+      <button data-view="policies"><span>⊙</span> Policies</button>
+      <button data-view="activity"><span>≋</span> Activity log</button>
+    </nav>
+    <div class="nav-label secondary-label">BUILD</div>
+    <nav><button data-view="developers"><span>⌘</span> Developer guide</button></nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Solana only <small>v0.1 · local preview</small></div>
+  </aside>
+  <div class="main-shell">
+    <header><div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Overview</strong></div><div class="header-right"><span class="network-badge" id="network">Sandbox</span><div class="avatar" title="Local operator">KR</div></div></header>
+    <main id="main" tabindex="-1"><div class="loading">Loading your workspace…</div></main>
+    <footer><span>Built for the Solana ecosystem.</span><span>Local operator · encrypted development signer</span></footer>
+  </div>
+  <dialog id="dialog"><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
